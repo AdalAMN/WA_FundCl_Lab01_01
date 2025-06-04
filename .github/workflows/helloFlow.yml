@@ -1,8 +1,8 @@
 name: Hello Flow
+
 on: 
   schedule:  
-  - cron: '* * * * *'
-
+    - cron: '* * * * *'
 
 jobs:
   first-job:
@@ -10,6 +10,6 @@ jobs:
     steps:
       - name: Diga oi
         run: echo "Hello World!"
-        
+
       - name: Diga valeu
         run: echo "Valeu - bye!"
