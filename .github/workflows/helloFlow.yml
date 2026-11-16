@@ -1,8 +1,9 @@
 name: Hello Flow
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '3-58/5 * * * *'
 
 jobs:
   first-job:
@@ -14,3 +15,6 @@ jobs:
 
       - name: Diga valeu
         run: echo "Valeu - bye!"
+
+      - name: Mostrar horário
+        run: date
